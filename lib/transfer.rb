@@ -19,10 +19,13 @@ class Transfer
       receiver.deposit(amount)
       @status = "complete"
     elsif valid? == false
-    @status = "rejected"
-    "Transaction rejected. Please check your account balance."
+    reject
     end
   end
+  
+  def reject
+    @status = "rejected"
+    "Transaction rejected. Please check your account balance."
       
   
 end
