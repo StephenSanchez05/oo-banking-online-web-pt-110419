@@ -10,7 +10,7 @@ class Transfer
   end
   
   def valid?
-    @Bank.valid?
+    @BankAccount.valid?
   end
   
 end
