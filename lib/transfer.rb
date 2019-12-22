@@ -30,5 +30,6 @@ class Transfer
     receiver.deposit(-amount)
     @status = "pending"
   end
+end
 
 end
