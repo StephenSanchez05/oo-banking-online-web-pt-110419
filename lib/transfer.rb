@@ -12,7 +12,8 @@ class Transfer
   end
   
   def valid?(name)
-   binding.pry name.valid?
+   binding.pry 
+   name.valid?
   end
   
 end
