@@ -24,5 +24,11 @@ class Transfer
     end
   end
   
+  describe reverse_transfer
+  if status == "complete"
+    sender.deposit(amount)
+    receiver.deposit(-amount)
+    status = "pending"
+  end
 
 end
