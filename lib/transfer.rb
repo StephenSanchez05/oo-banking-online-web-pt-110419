@@ -18,7 +18,7 @@ class Transfer
       sender.deposit(-amount)
       receiver.deposit(amount)
       @status = "complete"
-    elsif valid? == false
+    else
     reject
     end
   end
