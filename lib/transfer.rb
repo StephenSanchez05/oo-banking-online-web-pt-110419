@@ -9,9 +9,8 @@ class Transfer
     @status = "pending"
   end
   
-  def valid?(name)
-    name.valid?
-      
+  def valid?
+    @Bank.valid?
   end
   
 end
