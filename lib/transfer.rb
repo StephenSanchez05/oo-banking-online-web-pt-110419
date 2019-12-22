@@ -10,6 +10,7 @@ class Transfer
   end
   
   def valid?(name)
-    
+    name.valid?
+  end
   
 end
