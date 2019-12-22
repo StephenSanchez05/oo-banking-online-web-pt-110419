@@ -25,10 +25,10 @@ class Transfer
   end
   
   describe reverse_transfer
-  if status == "complete"
+  if @status == "complete"
     sender.deposit(amount)
     receiver.deposit(-amount)
-    status = "pending"
+    @status = "pending"
   end
 
 end
