@@ -10,7 +10,8 @@ class Transfer
   end
   
   def valid?(name)
-    name.valid?
+    if name.valid?
+      @status = ""
   end
   
 end
