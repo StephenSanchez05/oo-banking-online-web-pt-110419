@@ -15,6 +15,7 @@ class Transfer
   
   def execute_transaction
     if @status != "complete"
-      @sender
+      @sender.deposit(amount)
+      @reciever.deposit(amount)
   
 end
